@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nestedScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerbalReasonings"
+    android:orientation="vertical"
+    android:background="@drawable/img3">
+
+
+    <LinearLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Logical Reasoning"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="24dp"
+            android:textStyle="bold"/>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_alignParentStart="true"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="@color/black"/>
+
+        <!-- Your other views here -->
+
+        <TextView
+            android:id="@+id/tvLogicalReasoningContent1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Question 1:\n
+Choose the option that best completes the analogy:\n
+Apple : Fruit :: Carrot : ___________\n
+\n
+Options:\n
+A) Vegetable\n
+B) Food\n
+C) Plant\n
+D) Juice\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/LogicalReasoningbtnToggle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvLogicalReasoningHiddenContent1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+A) Vegetable\n
+\n
+Explanation:\n
+The analogy states a relationship between an apple and a fruit. Similarly, a carrot is a type of vegetable. Therefore, the correct answer is A) Vegetable."
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+
+        <TextView
+            android:id="@+id/tvLogicalReasoningContent2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="\nQuestion 2:\n
+Choose the option that best completes the series:\n
+2, 5, 11, 20, 32, ___________\n
+\n
+Options:\n
+A) 45\n
+B) 49\n
+C) 52\n
+D) 56\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/LogicalReasoningbtnToggle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvLogicalReasoningHiddenContent2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+C) 52\n
+\n
+Explanation:\n
+To find the pattern in the series, we can observe that each number is obtained by adding consecutive odd numbers starting from 1.
+\n\n
+2 + 1 = 3\n
+5 + 3 = 8\n
+11 + 5 = 16\n
+20 + 7 = 27\n
+32 + 9 = 41\n
+\n
+Following the same pattern, the next number would be 41 + 11 = 52. Therefore, the correct answer is C) 52."
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tvLogicalReasoningContent3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="\nQuestion 3:\n
+Choose the option that best completes the following sequence:\n
+Z, X, U, Q, ___________\n
+\n
+Options:\n
+A) K\n
+B) H\n
+C) E\n
+D) C\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/LogicalReasoningbtnToggle3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvLogicalReasoningHiddenContent3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+C) E\n
+\n
+Explanation:\n
+In this sequence, each letter is obtained by moving backward in the English alphabet with a gap that increases by 1 each time.
+\n\n
+Z - 2 = X\n
+X - 3 = U\n
+U - 4 = Q\n
+\n
+Following the same pattern, Q - 5 = E. Therefore, the correct answer is C) E.\n"
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvLogicalReasoningContent4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Question 4:\n
+Choose the option that does not belong to the given group:\n
+A) Square\n
+B) Circle\n
+C) Triangle\n
+D) Rectangle\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/LogicalReasoningbtnToggle4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvLogicalReasoningHiddenContent4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+B) Circle\n
+\n
+Explanation:\n
+Among the given options, all except the circle are polygons. The circle is a closed curve with no straight sides, while the other options are all shapes with straight sides. Therefore, the correct answer is B) Circle.\n"
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tvLogicalReasoningContent5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Question 5:\n
+Choose the option that best completes the analogy:\n
+Dog : Bark :: Cat : ___________\n
+\n
+Options:\n
+A) Meow\n
+B) Howl\n
+C) Purr\n
+D) Roar\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/LogicalReasoningbtnToggle5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvLogicalReasoningHiddenContent5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+A) Meow\n
+\n
+Explanation:\n
+The analogy states a relationship between a dog and its sound, which is a bark. Similarly, a cat is often associated with the sound 'meow.' Therefore, the correct answer is A) Meow."
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tvLogicalReasoningContent6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="\nQuestion 6:\n
+Choose the option that best completes the following pattern:\n
+1, 4, 9, 16, ___________\n
+\n
+Options:\n
+A) 25\n
+B) 28\n
+C) 36\n
+D) 40\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/LogicalReasoningbtnToggle6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvLogicalReasoningHiddenContent6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+A) 25\n
+\n
+Explanation:\n
+The given pattern represents the squares of consecutive positive integers.\n"
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tvLogicalReasoningContent7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Question 7:\n
+Choose the option that best completes the analogy:\n
+Pen : Write :: Scissors : ___________\n
+\n
+Options:\n
+A) Cut\n
+B) Sew\n
+C) Staple\n
+D) Measure\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/LogicalReasoningbtnToggle7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvLogicalReasoningHiddenContent7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+A) Cut\n
+\n
+Explanation:\n
+The analogy states a relationship between a pen and its action, which is to write. Similarly, scissors are used to cut. Therefore, the correct answer is A) Cut."
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+
+        <TextView
+            android:id="@+id/tvLogicalReasoningContent8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="\nQuestion 8:\n
+Choose the option that best completes the analogy:\n
+Doctor : Patient :: Teacher : ___________\n
+\n
+Options:\n
+A) Classroom\n
+B) Pupil\n
+C) Lesson\n
+D) School\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/LogicalReasoningbtnToggle8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvLogicalReasoningHiddenContent8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+B) Pupil\n
+\n
+Explanation:\n
+The analogy states a relationship between a doctor and a patient. Similarly, a teacher interacts with a pupil. Therefore, the correct answer is B) Pupil."
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tvLogicalReasoningContent9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="\nQuestion 9:\n
+Choose the option that best completes the analogy:\n
+Chair : Furniture :: Car : ___________\n
+\n
+Options:\n
+A) Road\n
+B) Vehicle\n
+C) Driver\n
+D) Gasoline\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/LogicalReasoningbtnToggle9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvLogicalReasoningHiddenContent9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+B) Vehicle\n
+\n
+Explanation:\n
+The analogy states a relationship between a chair and furniture. Similarly, a car is a type of vehicle. Therefore, the correct answer is B) Vehicle."
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+
+        <TextView
+            android:id="@+id/tvLogicalReasoningContent10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="\nQuestion 10:\n
+Choose the option that does not belong to the given group:\n
+A) Lion\n
+B) Tiger\n
+C) Elephant\n
+D) Zebra\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/LogicalReasoningbtnToggle10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvLogicalReasoningHiddenContent10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+C) Elephant\n
+\n
+Explanation:\n
+Among the given options, all except the elephant are carnivorous animals. The elephant is a herbivore. Therefore, the correct answer is C) Elephant.\n"
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Visit For More Question And Answer"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Link1"
+            android:clickable="true"
+            android:textSize="16dp"
+            android:textColorLink="@color/black"
+            android:autoLink="all"
+            android:textColor="@color/black"
+            android:text="https://www.indiabix.com/aptitude/questions-and-answers/"/>
+
+
+        <!-- Add more views as needed -->
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

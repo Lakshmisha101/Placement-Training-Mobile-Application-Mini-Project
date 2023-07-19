@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="drawerLayout" type="id" />
+    <item name="contentLayout" type="id" />
+    <item name="navigationRecyclerView" type="id" />
+    <item name="buttonToggle" type="id" />
+    <item name="textViewContent" type="id" />
+    <item name="textViewItem" type="id" />
+    <item name="main_heading" type="id" />
+    <item name="test1_button" type="id" />
+    <item name="test2_button" type="id" />
+    <item name="test3_button" type="id" />
+    <item name="timer_text" type="id" />
+    <item name="start_button" type="id" />
+    <item name="option4" type="id" />
+</resources>

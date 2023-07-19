@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Project"
+        tools:targetApi="31">
+        <activity
+            android:name=".Engineering"
+            android:exported="false" />
+        <activity
+            android:name=".LogicalReasonings"
+            android:exported="false" />
+        <activity
+            android:name=".VerbalReasonings"
+            android:exported="false" />
+        <activity
+            android:name=".VerbalAndReasonings"
+            android:exported="false" />
+        <activity
+            android:name=".GeneralAptitude"
+            android:exported="false" />
+        <activity
+            android:name=".ProgrammingTests"
+            android:exported="false" />
+        <activity
+            android:name=".JavaProgramming"
+            android:exported="false" />
+        <activity
+            android:name=".CPPProgramming"
+            android:exported="false" />
+        <activity
+            android:name=".CProgramming"
+            android:exported="false" />
+        <activity
+            android:name=".DatabaseTest"
+            android:exported="false" />
+        <activity
+            android:name=".NetworkingTest"
+            android:exported="false" />
+        <activity
+            android:name=".DatabaseQ"
+            android:exported="false" />
+        <activity
+            android:name=".Networking"
+            android:exported="false" />
+        <activity
+            android:name=".TechnicalMCQs"
+            android:exported="false" />
+        <activity
+            android:name=".Programming"
+            android:exported="false" />
+        <activity
+            android:name=".OnlineTest3"
+            android:exported="false" />
+        <activity
+            android:name=".OnlineTest2"
+            android:exported="false" />
+        <activity
+            android:name=".OnlineTest1"
+            android:exported="false" />
+        <activity
+            android:name=".OnlineTests"
+            android:exported="false" />
+        <activity
+            android:name=".LogicalReasoningTest"
+            android:exported="false" />
+        <activity
+            android:name=".VerbalReasoningTest"
+            android:exported="false" />
+        <activity
+            android:name=".VerbalReasonings"
+            android:exported="false" />
+        <activity
+            android:name=".DataInterpretationTest"
+            android:exported="false" />
+        <activity
+            android:name=".ArithmeticAptitude"
+            android:exported="false" />
+        <activity
+            android:name=".DataInterpretation"
+            android:exported="false" />
+        <activity
+            android:name=".QuizActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AritmeticAptitude"
+            android:exported="false" />
+        <activity
+            android:name=".HomePage"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".loginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

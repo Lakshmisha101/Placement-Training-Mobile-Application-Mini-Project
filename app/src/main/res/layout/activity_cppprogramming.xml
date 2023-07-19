@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nestedScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CPPProgramming"
+    android:background="@drawable/img3"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="C++ Programming"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="24dp"
+            android:textStyle="bold"/>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_alignParentStart="true"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="@color/black"/>
+
+        <!-- Your other views here -->
+
+        <TextView
+            android:id="@+id/tvArithmeticContent1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Question:1\nIdentify the grammatically correct sentence from the options below:\n
+\n
+A) I is going to the store.\n
+B) He have two dogs and a cat.\n
+C) They likes to play soccer.\n
+D) She was reading a book.\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+D) She was reading a book.\n
+\n
+Explanation:\n
+Option D is the grammatically correct sentence. It follows the subject-verb agreement where 'She' (singular) is followed by the appropriate verb form 'was' (past tense of 'to be') and then the action 'reading' is correctly used. Additionally, the sentence structure is coherent and makes sense."
+        android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+
+        <TextView
+            android:id="@+id/tvArithmeticContent2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Question 2:\n
+Which of the following is the correct way to define a class in C++?\n
+\n
+Options:\n
+A) class MyClass { };\n
+B) struct MyClass { };\n
+C) class MyClass : public BaseClass { };\n
+D) void MyClass() { }\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+A) class MyClass { };\n
+\n
+Explanation:\n
+The correct way to define a class in C++ is using the class keyword followed by the class name and a pair of curly braces to enclose the class definition. Option A demonstrates the correct syntax for class declaration."
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tvArithmeticContent3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Question 3:\n
+What is the access specifier used to denote a private member in a class in C++?\n
+\n
+Options:\n
+A) private\n
+B) public\n
+C) protected\n
+D) friend\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+A) private\n
+\n
+Explanation:\n
+In C++, the private access specifier is used to declare members of a class that are only accessible within the class itself. Private members cannot be accessed directly from outside the class.\n"
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvArithmeticContent4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="\nQuestion 4:\n
+What is the correct way to allocate memory for a dynamic array in C++?\n
+\n
+Options:\n
+A) int arr[10];\n
+B) int *arr = malloc(10 * sizeof(int));\n
+C) int *arr = new int[10];\n
+D) int *arr = calloc(10, sizeof(int));\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+C) int *arr = new int[10];\n
+\n
+Explanation:\n
+To allocate memory for a dynamic array in C++, the new operator is used. The expression new int[10] allocates memory for an array of 10 integers. Remember to use delete[] to deallocate the memory when it is no longer needed.\n"
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tvArithmeticContent5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="\nQuestion 5:\n
+Which of the following is the correct syntax to declare a pointer variable in C++?
+
+A) int* ptr;
+B) ptr int;
+C) int ptr*;
+D) ptr* int;"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:
+A) int* ptr;
+
+Explanation:
+The correct syntax to declare a pointer variable in C++ is to place an asterisk () next to the data type. Option A, 'int ptr;', correctly declares a pointer variable named 'ptr' of type integer. The asterisk (*) indicates that 'ptr' is a pointer."
+        android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tvArithmeticContent6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="\nQuestion 6:\n
+Which of the following is the correct syntax for defining a constructor in a class in C++?\n
+\n
+Options:\n
+A) class MyClass { MyClass() { } };\n
+B) class MyClass { void MyClass() { } };\n
+C) class MyClass { public: MyClass() { } };\n
+D) class MyClass { constructor MyClass() { } };\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+C) class MyClass { public: MyClass() { } };\n
+\n
+Explanation:\n
+The correct syntax for defining a constructor in C++ is to use the same name as the class, preceded by the access specifier (public, private, or protected). Option C demonstrates the correct syntax.\n"
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tvArithmeticContent7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="\nQuestion 7:\n
+What is the result of the expression sizeof(3.14) in C++?\n
+\n
+Options:\n
+A) 4\n
+B) 8\n
+C) 16\n
+D) It varies depending on the compiler\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+B) 8\n
+\n
+Explanation:\n
+The sizeof operator in C++ returns the size in bytes of a data type or an expression. The expression sizeof(3.14) gives the size of a double data type, which is typically 8 bytes on most systems."
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+
+        <TextView
+            android:id="@+id/tvArithmeticContent8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="\n\nQuestion 8:\n
+What is the purpose of the virtual keyword in C++?\n
+\n
+Options:\n
+A) It specifies that a class cannot be inherited from.\n
+B) It specifies that a member function should be overloaded.\n
+C) It specifies that a member function can be overridden in a derived class.\n
+D) It specifies that a member function should be declared as const.\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+C) It specifies that a member function can be overridden in a derived class.\n
+\n
+Explanation:\n
+The virtual keyword in C++ is used to declare a member function in a base class that can be overridden in a derived class. This allows polymorphism and enables dynamic binding of the function calls."
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tvArithmeticContent9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="\nQuestion 9:\n
+Which of the following is the correct way to dynamically allocate an array of integers in C++?
+
+A) int* arr = new int[5];
+B) int arr[5];
+C) int* arr = malloc(5 * sizeof(int));
+D) int arr = new int[5];"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:
+A) int* arr = new int[5];
+
+Explanation:
+The correct way to dynamically allocate an array of integers in C++ is by using the new operator, as shown in option A. The new operator allocates memory for the specified number of elements (in this case, 5) of the specified type (int). The new operator returns a pointer to the dynamically allocated memory, which is assigned to the pointer variable arr. This dynamically allocated array can be accessed and used like any other array.
+
+Option B (int arr[5];) is incorrect as it declares a fixed-size array on the stack, not dynamically allocated memory. Option C (int* arr = malloc(5 * sizeof(int));) is incorrect because malloc() is a C library function and should be avoided in C++. Option D (int arr = new int[5];) is incorrect because it assigns a single integer value to arr rather than creating an array.
+
+I hope this additional multiple-choice question helps! Let me know if you have any further questions or need additional clarification.
+
+
+
+
+
+
+"
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+
+        <TextView
+            android:id="@+id/tvArithmeticContent10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="\nQuestion 10:\n
+What is the purpose of the const keyword in C++?\n
+\n
+Options:\n
+A) It indicates that a variable is constant and its value cannot be changed.\n
+B) It indicates that a function should return a constant value.\n
+C) It indicates that a member function can be called on constant objects.\n
+D) It indicates that a class cannot be inherited from.\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+A) It indicates that a variable is constant and its value cannot be changed.\n
+\n
+Explanation:\n
+The const keyword in C++ is used to declare variables as constants. Once a variable is declared as const, its value cannot be modified. Option A correctly describes the purpose of the const keyword.\n"
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Visit For More Question And Answer"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Link1"
+            android:clickable="true"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:textColorLink="@color/black"
+            android:autoLink="all"
+            android:text="https://www.indiabix.com/aptitude/questions-and-answers/"/>
+
+
+        <!-- Add more views as needed -->
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

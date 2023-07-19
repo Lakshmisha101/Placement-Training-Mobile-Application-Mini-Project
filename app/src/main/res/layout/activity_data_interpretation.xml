@@ -1,0 +1,416 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DataInterpretation"
+    android:background="@drawable/img3">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="Data Interpretation"
+    android:gravity="center"
+    android:layout_marginTop="20dp"
+    android:textSize="24dp"
+    android:textStyle="bold"/>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_alignParentStart="true"
+                android:background="?android:attr/listDivider"
+                android:backgroundTint="@color/black"/>
+
+
+            <!-- Your other views here -->
+
+            <TextView
+                android:id="@+id/tvDIContent1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:lineSpacingExtra="10sp"
+                android:textColor="@color/black"
+                android:text="Question 1:
+\n
+In a survey conducted among a group of students, 60% of them preferred pizza, 25% preferred burgers, 10% preferred sushi, and the remaining students preferred sandwiches. If there were 200 students surveyed in total, how many students preferred sandwiches?\n"/>
+            <Button
+                android:id="@+id/btnDIToggle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show More" />
+
+            <TextView
+                android:id="@+id/tvDIHiddenContent1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:lineSpacingExtra="10sp"
+                android:textColor="@color/black"
+                android:text="Solution 1:\n
+To find the number of participants who prefer other beverages, we subtract the percentages of participants who prefer tea and coffee from 100% (total percentage).\n
+Percentage of participants who prefer tea = 40%\n
+Percentage of participants who prefer coffee = 30%\n
+Percentage of participants who prefer other beverages = 100% - (40% + 30%) = 30%\n
+Number of participants who prefer other beverages = 30% of 500 participants = (30/100) * 500 = 150 participants\n
+Therefore, the correct answer is C) 150.\n"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvDIContent2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:lineSpacingExtra="10sp"
+                android:textColor="@color/black"
+                android:text="Question 2:
+\n
+A company's stock prices for a week are as follows: $20, $25, $18, $22, $24, $21. What is the average stock price for the week?\n
+\n
+A) $20\n
+B) $21\n
+C) $22\n
+D) $23\n" />
+
+            <Button
+                android:id="@+id/btnDIToggle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show More" />
+
+            <TextView
+                android:id="@+id/tvDIHiddenContent2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:lineSpacingExtra="10sp"
+                android:textColor="@color/black"
+                android:text="Solution 2:\n
+To find the average stock price, we sum up the stock prices for the week and divide by the number of days.\n
+Average stock price = ($20 + $25 + $18 + $22 + $24 + $21) / 6 = $130 / 6 ≈ $21.67\n
+Therefore, the correct answer is B) $21.\n"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvDIContent3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:lineSpacingExtra="10sp"
+                android:textColor="@color/black"
+                android:text="Question 3:
+\n
+A car travels at a speed of 60 km/h for the first 2 hours, 50 km/h for the next 3 hours, and 70 km/h for the final 1 hour. What is the average speed of the car?\n
+\n
+A) 55 km/h\n
+B) 58 km/h\n
+C) 60 km/h\n
+D) 62 km/h\n"/>
+            <Button
+                android:id="@+id/btnDIToggle3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show More" />
+
+            <TextView
+                android:id="@+id/tvDIHiddenContent3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:lineSpacingExtra="10sp"
+                android:textColor="@color/black"
+                android:text="Solution 3:\n
+To find the average speed of the car, we calculate the total distance traveled and divide it by the total time taken.\n
+Total distance traveled = (60 km/h * 2 hours) + (50 km/h * 3 hours) + (70 km/h * 1 hour) = 120 km + 150 km + 70 km = 340 km\n
+Total time taken = 2 hours + 3 hours + 1 hour = 6 hours\n
+Average speed = Total distance traveled / Total time taken = 340 km / 6 hours = 56.67 km/h\n
+Therefore, the correct answer is A) 55 km/h.\n"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvDIContent4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:lineSpacingExtra="10sp"
+                android:textColor="@color/black"
+                android:text="Question 4:
+\n
+In a sales report, it is mentioned that 20% of the total sales came from Product A, 30% from Product B, and the remaining sales came from other products. What percentage of the total sales came from other products?\n
+\n
+A) 10%\n
+B) 30%\n
+C) 40%\n
+D) 50%\n"/>
+            <Button
+                android:id="@+id/btnDIToggle4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show More" />
+
+            <TextView
+                android:id="@+id/tvDIHiddenContent4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:lineSpacingExtra="10sp"
+                android:textColor="@color/black"
+                android:text="To find the percentage of total sales that came from other products, we subtract the percentages of sales from Product A and Product B from 100%.\n
+Percentage of sales from other products = 100% - (20% + 30%) = 50%\n
+Therefore, the correct answer is D) 50%.\n"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/tvDIContent5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:lineSpacingExtra="10sp"
+                android:textColor="@color/black"
+                android:text="Question 5:
+\n
+A company's revenue for the year is as follows: $100,000 in January, $120,000 in February, $80,000 in March, and $110,000 in April. What is the average monthly revenue?\n
+\n
+A) $100,000\n
+B) $105,000\n
+C) $105,500\n
+D) $110,000\n"/>
+            <Button
+                android:id="@+id/btnDIToggle5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show More" />
+
+            <TextView
+                android:id="@+id/tvDIHiddenContent5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="10sp"
+                android:layout_margin="16dp"
+                android:textColor="@color/black"
+                android:text="Solution 5:\n
+To find the average monthly revenue, we sum up the revenue for each month and divide by the number of months.\n
+Average monthly revenue = ($100,000 + $120,000 + $80,000 + $110,000) / 4 = $410,000 / 4 = $102,500\n
+Therefore, the correct answer is C) $105,500.\n"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/tvDIContent6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:lineSpacingExtra="10sp"
+                android:textColor="@color/black"
+                android:text="Question 6:
+\n
+In a classroom of 30 students, 15 of them are girls. What percentage of the students are boys?\n
+\n
+A) 20%\n
+B) 40%\n
+C) 50%\n
+D) 60%\n"/>
+            <Button
+                android:id="@+id/btnDIToggle6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show More" />
+
+            <TextView
+                android:id="@+id/tvDIHiddenContent6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="10sp"
+                android:layout_margin="16dp"
+                android:textColor="@color/black"
+                android:text="To find the percentage of students who are boys, we subtract the percentage of girls from 100%.\n
+Percentage of boys = 100% - 50% = 50%\n
+Therefore, the correct answer is C) 50%.\n"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/tvDIContent7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:lineSpacingExtra="10sp"
+                android:textColor="@color/black"
+                android:text="Question 7:
+\n
+A store offers a 20% discount on a product that costs $50. What is the discounted price?\n
+\n
+A) $10\n
+B) $20\n
+C) $30\n
+D) $40\n"/>
+            <Button
+                android:id="@+id/btnDIToggle7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Show More" />
+
+            <TextView
+                android:id="@+id/tvDIHiddenContent7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="10sp"
+                android:layout_margin="16dp"
+                android:textColor="@color/black"
+                android:text="Solution 7:\n
+To find the discounted price, we calculate 20% of the original price and subtract it from the original price.\n
+Discounted price = $50 - (20% of $50) = $50 - ($10) = $40\n
+Therefore, the correct answer is D) $40.\n"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/tvDIContent8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:lineSpacingExtra="10sp"
+                android:textColor="@color/black"
+                android:text="Question 8:
+\n
+The scores of a student in five subjects are as follows: 80, 85, 90, 95, and 75. What is the average score?\n
+\n
+A) 82\n
+B) 85\n
+C) 87\n
+D) 90\n"/>
+            <Button
+                android:id="@+id/btnDIToggle8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show More" />
+
+            <TextView
+                android:id="@+id/tvDIHiddenContent8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:textColor="@color/black"
+                android:lineSpacingExtra="10sp"
+                android:text="Solution 8:\n
+To find the average score, we sum up the scores for all subjects and divide by the number of subjects.\n
+Average score = (80 + 85 + 90 + 95 + 75) / 5 = 425 / 5 = 85\n
+Therefore, the correct answer is B) 85.\n"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvDIContent9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:lineSpacingExtra="10sp"
+                android:textColor="@color/black"
+                android:text="Question 9:
+\n
+A survey of 200 people showed that 60% of them prefer dogs, 25% prefer cats, and the remaining people prefer other pets. How many people prefer other pets?\n
+\n
+A) 30\n
+B) 40\n
+C) 50\n
+D) 60\n"/>
+
+            <Button
+                android:id="@+id/btnDIDIToggle9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show More" />
+
+            <TextView
+                android:id="@+id/tvDIHiddenContent9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:lineSpacingExtra="10sp"
+                android:textColor="@color/black"
+                android:text="Solution 9:\n
+To find the number of people who prefer other pets, we subtract the percentages of people who prefer dogs and cats from 100%.\n
+Percentage of people who prefer dogs = 60%\n
+Percentage of people who prefer cats = 25%\n
+Percentage of people who prefer other pets = 100% - (60% + 25%) = 15%\n
+Number of people who prefer other pets = 15% of 200 people = (15/100) * 200 = 30 people\n
+Therefore, the correct answer is A) 30.\n"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/tvDIContent10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:lineSpacingExtra="10sp"
+                android:textColor="@color/black"
+                android:text="Question 10:
+\n
+A company had a total revenue of $1,000,000. If 40% of the revenue came from product sales and the remaining 60% came from services, what was the revenue from services?\n
+\n
+A) $400,000\n
+B) $500,000\n
+C) $600,000\n
+D) $700,000\n"/>
+            <Button
+                android:id="@+id/btnDIToggle10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show More" />
+
+            <TextView
+                android:id="@+id/tvDIHiddenContent10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:lineSpacingExtra="10sp"
+                android:textColor="@color/black"
+                android:text="Solution 10:\n
+To find the revenue from services, we calculate 60% of the total revenue.\n
+Revenue from services = 60% of $1,000,000 = (60/100) * $1,000,000 = $600,000\n
+Therefore, the correct answer is C) $600,000.\n"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Visit For More Question And Answer\n"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Link1"
+                android:clickable="true"
+                android:textColor="@color/black"
+                android:autoLink="all"
+                android:textColorLink="@color/black"
+                android:textSize="16dp"
+                android:text="https://www.indiabix.com/aptitude/questions-and-answers/"/>
+
+
+            <!-- Add more views as needed -->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

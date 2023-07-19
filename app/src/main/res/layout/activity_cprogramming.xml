@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nestedScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CProgramming"
+    android:background="@drawable/img3"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="C Programming"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="24dp"
+            android:textStyle="bold"/>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_alignParentStart="true"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="@color/black"/>
+
+        <!-- Your other views here -->
+
+        <TextView
+            android:id="@+id/tvArithmeticContent1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Question 1:\n
+Which of the following is NOT a valid data type in C?
+A) int
+B) float
+C) char
+D) boolean"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:
+D) boolean
+
+Explanation:
+The data type 'boolean' is not a standard data type in the C programming language. C does not have a built-in boolean data type like some other programming languages. Instead, in C, we typically use integers or characters to represent boolean values, where 0 represents false and any non-zero value represents true."
+        android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+
+        <TextView
+            android:id="@+id/tvArithmeticContent2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Question 2:\n
+Which of the following is not a valid C identifier?\n
+\n
+Options:\n
+A) myVar\n
+B) 123abc\n
+C) _var\n
+D) total_sum\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+B) 123abc\n
+\n
+Explanation:\n
+A valid C identifier must start with a letter or an underscore. It cannot start with a number. Therefore, 123abc is not a valid C identifier."
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tvArithmeticContent3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="\nQuestion 3:\n
+What is the size of int data type in C?\n
+\n
+Options:\n
+A) 2 bytes\n
+B) 4 bytes\n
+C) 8 bytes\n
+D) It varies depending on the compiler\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+D) It varies depending on the compiler\n
+\n
+Explanation:\n
+The size of int data type in C can vary depending on the compiler and the platform. However, most commonly, it is 4 bytes on modern systems."
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvArithmeticContent4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="\nQuestion 4:\n
+What is the correct syntax to declare a function pointer in C?\n
+\n
+Options:\n
+A) int (*func_ptr)()\n
+B) (*int func_ptr)()\n
+C) int *func_ptr()\n
+D) int *func_ptr\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+A) int (*func_ptr)()\n
+\n
+Explanation:\n
+The correct syntax to declare a function pointer in C is int (*func_ptr)(). The parentheses are necessary to indicate that func_ptr is a pointer to a function returning an int."
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tvArithmeticContent5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="\nQuestion 5:\n
+What is the purpose of the 'scanf' function in C?\n
+A) To print output to the console\n
+B) To read input from the user\n
+C) To perform arithmetic operations\n
+D) To compare two variables\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+B) To read input from the user\n
+\n
+Explanation:\n
+The 'scanf' function in C is used to read input from the user through the standard input (usually the console). It allows you to prompt the user for input and store the entered values into variables. It supports different format specifiers to read input of various data types."
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tvArithmeticContent6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="\nQuestion 6:\n
+What is the result of the expression sizeof(3.14) in C?\n
+\n
+Options:\n
+A) 4\n
+B) 8\n
+C) 16\n
+D) It varies depending on the compiler\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+B) 8\n
+\n
+Explanation:\n
+The sizeof operator in C returns the size in bytes of a data type or an expression. The expression sizeof(3.14) gives the size of a double data type, which is typically 8 bytes on most systems.\n"
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tvArithmeticContent7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="\nQuestion 7:\n
+Which of the following is the correct way to allocate memory for a dynamic array in C?\n
+\n
+Options:\n
+A) int arr[10];\n
+B) int *arr = malloc(10 * sizeof(int));\n
+C) int *arr = new int[10];\n
+D) int *arr = calloc(10, sizeof(int));\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+B) int *arr = malloc(10 * sizeof(int));\n
+\n
+Explanation:\n
+To allocate memory for a dynamic array in C, you should use the malloc function. The expression malloc(10 * sizeof(int)) allocates memory for an array of 10 integers. Remember to deallocate the memory using free when it is no longer needed."
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+
+        <TextView
+            android:id="@+id/tvArithmeticContent8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="\nQuestion 8:\n
+Which of the following is NOT a valid way to initialize an array in C?\n
+A) int arr[] = {1, 2, 3};\n
+B) int arr[3] = {1, 2, 3};\n
+C) int arr[3] = {1, 2};\n
+D) int arr[3] = {0};\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+C) int arr[3] = {1, 2};\n
+\n
+Explanation:\n
+Option C is not a valid way to initialize an array in C because the size of the array is specified as 3, but only two initial values are provided. When initializing an array, the number of elements in the initializer list should match the size of the array. In this case, the initializer list should have three elements."
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tvArithmeticContent9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_margin="16dp"
+            android:text="\nQuestion 9:\n
+What is the purpose of the break statement in a switch statement in C?\n
+\n
+Options:\n
+A) It ends the execution of the switch statement.\n
+B) It skips the current case and moves to the next case.\n
+C) It restarts the switch statement from the beginning.\n
+D) It exits the entire program.\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_margin="16dp"
+            android:text="Solution:\n
+A) It ends the execution of the switch statement.\n
+\n
+Explanation:\n
+The break statement is used in a switch statement to exit the switch block once a matching case is found. Without the break statement, the execution would continue to the next case even if a match is found.\n"
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+
+        <TextView
+            android:id="@+id/tvArithmeticContent10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="\nQuestion 10:\n
+Which of the following is NOT a valid data type in C?\n
+A) int\n
+B) float\n
+C) char\n
+D) boolean\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent10"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Solution:\n
+D) boolean\n
+\n
+Explanation:\n
+The data type 'boolean ' is not a standard data type in the C programming language. C does not have a built-in boolean data type like some other programming languages. Instead, in C, we typically use integers or characters to represent boolean values, where 0 represents false and any non-zero value represents true."
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="\nVisit For More Question And Answer"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:id="@+id/Link1"
+            android:clickable="true"
+            android:textSize="16dp"
+            android:textColorLink="@color/black"
+            android:autoLink="all"
+            android:text="https://www.indiabix.com/aptitude/questions-and-answers/"/>
+
+
+        <!-- Add more views as needed -->
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

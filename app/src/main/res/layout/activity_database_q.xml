@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nestedScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DatabaseQ"
+    android:background="@drawable/img3"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Database"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="24dp"
+            android:textStyle="bold"/>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_alignParentStart="true"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="@color/black"/>
+
+        <!-- Your other views here -->
+
+        <TextView
+            android:id="@+id/tvDatabaseQContent1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Question 1:\n
+Which type of database model uses tables to store data?\n
+\n
+Options:\n
+A) Relational database\n
+B) Hierarchical database\n
+C) Network database\n
+D) Object-oriented database\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/DatabaseQbtnToggle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvDatabaseQHiddenContent1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+A) Relational database\n
+\n
+Explanation:\n
+A relational database model organizes data into tables, where each table represents a relation. Tables consist of rows (records) and columns (attributes), allowing for efficient storage and retrieval of data."
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+
+        <TextView
+            android:id="@+id/tvDatabaseQContent2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="\nQuestion 2:\n
+Which SQL keyword is used to retrieve data from a database table?\n
+\n
+Options:\n
+A) SELECT\n
+B) UPDATE\n
+C) DELETE\n
+D) INSERT\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/DatabaseQbtnToggle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvDatabaseQHiddenContent2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+A) SELECT\n
+\n
+Explanation:\n
+The SELECT keyword is used in SQL (Structured Query Language) to retrieve data from a database table. It allows you to specify the columns and conditions to filter the data you want to retrieve."
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tvDatabaseQContent3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="\nQuestion 3:\n
+Which type of key uniquely identifies a record in a database table?\n
+\n
+Options:\n
+A) Primary key\n
+B) Foreign key\n
+C) Candidate key\n
+D) Composite key\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/DatabaseQbtnToggle3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvDatabaseQHiddenContent3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_margin="16dp"
+            android:text="Solution:\n
+A) Primary key\n
+\n
+Explanation:\n
+A primary key is a column or set of columns that uniquely identifies each record in a database table. It ensures data integrity and serves as a reference for establishing relationships with other tables."
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvDatabaseQContent4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="\nQuestion 4:\n
+Which SQL clause is used to filter data based on a specified condition?\n
+\n
+Options:\n
+A) WHERE\n
+B) GROUP BY\n
+C) HAVING\n
+D) ORDER BY\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/DatabaseQbtnToggle4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvDatabaseQHiddenContent4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+A) WHERE\n
+\n
+Explanation:\n
+The WHERE clause is used in SQL to filter data based on a specified condition. It allows you to retrieve only the records that meet the specified criteria."
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tvDatabaseQContent5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="\nQuestion 5:
+Which type of relationship ensures that a foreign key in one table matches a primary key in another table?\n
+\n
+Options:\n
+A) One-to-One\n
+B) One-to-Many\n
+C) Many-to-One\n
+D) Many-to-Many\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/DatabaseQbtnToggle5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvDatabaseQHiddenContent5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+C) Many-to-One\n
+\n
+Explanation:\n
+In a many-to-one relationship, a foreign key in one table matches a primary key in another table. This relationship allows multiple records in one table to refer to a single record in another table."
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tvDatabaseQContent6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="\nQuestion 6:\n
+Which type of database model represents data as a collection of objects?\n
+\n
+Options:\n
+A) Relational database\n
+B) Hierarchical database\n
+C) Network database\n
+D) Object-oriented database\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/DatabaseQbtnToggle6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvDatabaseQHiddenContent6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+D) Object-oriented database\n
+\n
+Explanation:\n
+An object-oriented database model represents data as a collection of objects, where objects have properties and behavior. It allows for the storage of complex data structures and supports inheritance and encapsulation."
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tvDatabaseQContent7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="\nQuestion 7:\n
+Which SQL keyword is used to modify existing data in a database table?\n
+\n
+Options:\n
+A) SELECT\n
+B) UPDATE\n
+C) DELETE\n
+D) INSERT\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/DatabaseQbtnToggle7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvDatabaseQHiddenContent7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+B) UPDATE\n
+\n
+Explanation:\n
+The UPDATE keyword is used in SQL to modify existing data in a database table. It allows you to update the values of one or more columns based on specified conditions."
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+
+        <TextView
+            android:id="@+id/tvDatabaseQContent8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="\nQuestion 8:\n
+Which type of join returns only the records that have matching values in both tables?\n
+\n
+Options:\n
+A) INNER JOIN\n
+B) LEFT JOIN\n
+C) RIGHT JOIN\n
+D) FULL JOIN\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/DatabaseQbtnToggle8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvDatabaseQHiddenContent8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+A) INNER JOIN\n
+\n
+Explanation:\n
+An INNER JOIN is used in SQL to retrieve only the records that have matching values in both tables being joined. It combines rows from two tables based on a related column or columns."
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tvDatabaseQContent9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="\nQuestion 9:\n
+Which type of database model represents data as a collection of records linked through parent-child relationships?\n
+\n
+Options:\n
+A) Relational database\n
+B) Hierarchical database\n
+C) Network database\n
+D) Object-oriented database\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/DatabaseQbtnToggle9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvDatabaseQHiddenContent9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+B) Hierarchical database\n
+\n
+Explanation:\n
+A hierarchical database model represents data as a collection of records linked through parent-child relationships. It forms a tree-like structure where each parent can have multiple children, but a child can have only one parent."
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+
+        <TextView
+            android:id="@+id/tvDatabaseQContent10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="\nQuestion 10:
+Which SQL keyword is used to add new data to a database table?\n
+\n
+Options:\n
+A) SELECT\n
+B) UPDATE\n
+C) DELETE\n
+D) INSERT\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/DatabaseQbtnToggle10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvDatabaseQHiddenContent10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+D) INSERT\n
+\n
+Explanation:\n
+The INSERT keyword is used in SQL to add new data to a database table. It allows you to specify the values to be inserted into the columns of a table."
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="\nVisit For More Question And Answer"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Link1"
+            android:clickable="true"
+            android:textColor="@color/black"
+            android:autoLink="all"
+            android:textSize="20dp"
+            android:textColorLink="@color/black"
+            android:text="https://www.indiabix.com/aptitude/questions-and-answers/"/>
+
+
+        <!-- Add more views as needed -->
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

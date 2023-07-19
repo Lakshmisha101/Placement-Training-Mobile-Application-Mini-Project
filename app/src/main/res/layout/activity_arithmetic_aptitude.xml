@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nestedScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ArithmeticAptitude"
+    android:orientation="vertical"
+    android:background="@drawable/img3">
+
+
+    <LinearLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Arithmetic Aptitude"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="24dp"
+            android:textStyle="bold"/>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_alignParentStart="true"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="@color/black"/>
+
+        <!-- Your other views here -->
+
+        <TextView
+            android:id="@+id/tvArithmeticContent1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Question 1:\n
+The cost of 3 pens and 2 pencils is $17. The cost of 4 pens and 3 pencils is $23. What is the cost of a pen?\n
+\n
+Options:\n
+A) $3\n
+B) $4\n
+C) $5\n
+D) $6\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_margin="16dp"
+            android:text="To solve this, we follow the order of operations (also known as BODMAS/BIDMAS). First, we perform the subtraction inside the parentheses:
+(4 + 7) * 7\n
+Next, we perform the addition inside the parentheses:\n
+11 * 7
+Finally, we perform the multiplication:\n
+77\n
+
+Therefore, the simplified expression is 77.\n"
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+
+        <TextView
+            android:id="@+id/tvArithmeticContent2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Question 2:\n
+A train travels at a speed of 60 km/h for 3 hours. How far does the train travel in that time?\n
+\n
+Options:\n
+A) 120 km\n
+B) 160 km\n
+C) 180 km\n
+D) 200 km\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_margin="16dp"
+            android:text="Correct Answer: B) 180 km\n
+\n
+Explanation:\n
+To find the distance traveled by the train, we use the formula: Distance = Speed × Time.\n
+Given:\n
+Speed = 60 km/h\n
+Time = 3 hours\n
+\n
+Distance = 60 km/h × 3 hours\n
+Distance = 180 km\n
+\n
+Therefore, the correct answer is B) 180 km.\n"
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tvArithmeticContent3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Question 3:\n
+If the selling price of an item is $80 and the profit percentage is 25%, what is the cost price of the item?\n
+\n
+Options:\n
+A) $60\n
+B) $64\n
+C) $72\n
+D) $96\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+Let's assume the cost price of the item is 'C' dollars.\n
+\n
+Given:\n
+Selling price = $80\n
+Profit percentage = 25%\n
+\n
+Profit = Selling price - Cost price\n
+Profit = $80 - C\n
+\n
+Profit percentage = (Profit / Cost price) × 100\n
+25% = (80 - C) / C × 100\n
+\n
+25/100 = (80 - C) / C\n
+1/4 = (80 - C) / C\n
+\n
+4C = 80 - C\n
+5C = 80\n
+C = 80 / 5\n
+C = $16\n
+\n
+Therefore, the cost price of the item is $16.\n"
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvArithmeticContent4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Question 4:\n
+A car travels at a speed of 60 km/h for 4 hours. How long does it take to travel a distance of 240 km?\n
+\n
+Options:\n
+A) 2 hours\n
+B) 3 hours\n
+C) 4 hours\n
+D) 5 hours\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+To find the time taken to travel a distance, we use the formula: Time = Distance / Speed.\n
+\n
+Given:\n
+Speed = 60 km/h\n
+Distance = 240 km\n
+\n
+Time = 240 km / 60 km/h\n
+Time = 4 hours\n
+\n
+Therefore, the correct answer is C) 4 hours.\n"
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tvArithmeticContent5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Question 5:\n
+A shopkeeper sells an item for $120, making a profit of 20%. What is the cost price of the item?\n
+\n
+Options:\n
+A) $80\n
+B) $100\n
+C) $96\n
+D) $144\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+Let's assume the cost price of the item is 'c' dollars.\n
+\n
+Given:\n
+Selling price = $120\n
+Profit percentage = 20%\n
+\n
+Profit = Selling price - Cost price\n
+Profit = $120 - C\n
+\n
+Profit percentage = (Profit / Cost price) × 100\n
+20% = (120 - C) / C × 100\n
+\n
+20/100 = (120 - C) / C\n
+1/5 = (120 - C) / C\n
+\n
+5C = 120 - C\n
+\n
+Therefore, the cost price of the item is $20.\n"
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tvArithmeticContent6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Question 6:\n
+A company has 800 employees. The ratio of the number of male employees to the number of female employees is 3:5. If 20% of the male employees and 30% of the female employees are engineers, how many engineers are there in the company?\n
+\n
+Options:\n
+A) 240\n
+B) 320\n
+C) 400\n
+D) 480\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+Let's calculate the number of male and female employees based on the given ratio.\n
+\n
+Number of male employees = (3 / (3 + 5)) * 800 = (3/8) * 800 = 300\n
+Number of female employees = (5 / (3 + 5)) * 800 = (5/8) * 800 = 500\n
+\n
+Now, let's calculate the number of engineers among the male and female employees.\n
+\n
+Number of male engineers = 20% of 300 = (20/100) * 300 = 60\n
+Number of female engineers = 30% of 500 = (30/100) * 500 = 150\n
+\n
+Total number of engineers in the company = Number of male engineers + Number of female engineers = 60 + 150 = 210\n
+\n
+Therefore, the correct answer is not provided in the options. The number of engineers in the company is 210.\n"
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tvArithmeticContent7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Question 7:\n
+Simplify the expression: (5 + 2) * (4 + 3) - 6 / 2\n
+\n
+Options:
+A) 46\n
+B) 52\n
+C) 40\n
+D) 25\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+Let's solve the expression step by step:\n
+\n
+Step 1: Perform the addition inside the parentheses:\n
+(5 + 2) * (4 + 3) - 6 / 2\n
+7 * (4 + 3) - 6 / 2\n
+\n
+Step 2: Perform the addition inside the parentheses:\n
+7 * 7 - 6 / 2\n
+\n
+Step 3: Perform the division:\n
+49 - 6 / 2\n
+\n
+Step 4: Perform the division:\n
+49 - 3\n
+\n
+Step 5: Perform the subtraction:\n
+46\n
+\n
+Therefore, the simplified expression is 46.
+\n"
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+
+        <TextView
+            android:id="@+id/tvArithmeticContent8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Question 8:\n
+A shopkeeper sells an item for $450, making a profit of 25% on the cost price. What is the cost price of the item?\n
+\n
+Options:\n
+A) $240\n
+B) $320\n
+C) $40\n
+D) $90\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+Let's assume the cost price of the item is 'C' dollars.\n
+\n
+Profit percentage = (Profit / Cost price) * 100\n
+25% = (450 - C) / C * 100\n
+\n
+25/100 = (450 - C) / C\n
+1/4 = (450 - C) / C\n
+\n
+4C = 450 - C\n
+5C = 450\n
+C = 450 / 5\n
+C = $90\n
+\n
+Therefore, the cost price of the item is $90.\n"
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tvArithmeticContent9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Question 9:\n
+The population of a city increased by 20% in the first year, decreased by 10% in the second year, and increased by 15% in the third year. If the initial population of the city was 100,000, what is the final population?\n
+\n
+Options:\n
+A) 98,000\n
+B) 102,300\n
+C) 104,500\n
+D) 106,800\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+To solve this question, we need to calculate the population after each year and apply the percentage changes.\n
+\n
+Year 1: Population increased by 20%\n
+New population = 100,000 + (20/100 * 100,000) = 120,000\n
+\n
+Year 2: Population decreased by 10%\n
+New population = 120,000 - (10/100 * 120,000) = 108,000\n
+\n
+Year 3: Population increased by 15%\n
+New population = 108,000 + (15/100 * 108,000) = 124,200\n
+\n
+Therefore, the final population is 124,200.\n
+\n
+The correct answer is not listed in the given options. However, based on the calculations, the closest option would be:\n
+
+B) 102,300\n"
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+
+        <TextView
+            android:id="@+id/tvArithmeticContent10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Question 10:\n
+A company produces 500 widgets per day. Due to increased demand, the production is increased by 20% for the next three days. What is the total number of widgets produced in those three days?\n
+\n
+Options:\n
+A) 1,500\n
+B) 1,800\n
+C) 1,920\n
+D) 2,100\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+To find the total number of widgets produced in the next three days, we need to calculate the production for each day and sum them up.\n
+\n
+Day 1: Production is 500 widgets.\n
+Day 2: Production is increased by 20%.\n
+New production = 500 + (20/100 * 500) = 500 + 100 = 600 widgets.\n
+Day 3: Production is increased by 20% again.\n
+New production = 600 + (20/100 * 600) = 600 + 120 = 720 widgets.\n
+\n
+Total production in three days = 500 + 600 + 720 = 1,820 widgets.\n
+\n
+Therefore, the correct answer is not listed in the given options. However, based on the calculations, the closest option would be:\n
+
+B) 1,800\n"
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/black"
+    android:text="Visit For More Question And Answer\"
+    android:textSize="20dp"
+    android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:id="@+id/Link1"
+            android:clickable="true"
+            android:autoLink="all"
+            android:textColor="@color/black"
+            android:textColorLink="@color/black"
+            android:text="https://www.indiabix.com/aptitude/questions-and-answers/"/>
+
+
+        <!-- Add more views as needed -->
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

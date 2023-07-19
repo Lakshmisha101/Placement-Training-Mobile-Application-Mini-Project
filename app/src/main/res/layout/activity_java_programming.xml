@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nestedScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JavaProgramming"
+    android:background="@drawable/img3"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Java Programming"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="24dp"
+            android:textStyle="bold"/>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_alignParentStart="true"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="@color/black"/>
+
+        <!-- Your other views here -->
+
+        <TextView
+            android:id="@+id/tvArithmeticContent1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Question 1:\n
+What is the output of the following code snippet?\n
+\n
+public class Main {\n
+    public static void main(String[] args) {\n
+        int x = 5;\n
+        System.out.println(x++);\n
+    }\n
+}\n
+Options:\n
+A) 4\n
+B) 5\n
+C) 6\n
+D) 0\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+B) 5\n
+\n
+Explanation:\n
+The System.out.println statement outputs the value of x and then increments it due to the post-increment operator x++. Therefore, the output will be 5."
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+
+        <TextView
+            android:id="@+id/tvArithmeticContent2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="\nQuestion 2:\n
+Which of the following is the correct way to declare a variable in Java?\n
+\n
+Options:\n
+A) int var = 10;\n
+B) var x = 10;\n
+C) int x; x = 10;\n
+D) x = 10;\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+A) int var = 10;\n
+\n
+Explanation:\n
+The correct way to declare and initialize a variable in Java is by specifying the data type followed by the variable name and the initial value. Option A demonstrates the correct syntax for variable declaration."
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tvArithmeticContent3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="\nQuestion 3:\n
+What is the access modifier used to denote a private member in a class in Java?\n
+\n
+Options:\n
+A) private\n
+B) public\n
+C) protected\n
+D) default\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+A) private\n
+\n
+Explanation:\n
+In Java, the private access modifier is used to declare members of a class that are only accessible within the class itself. Private members cannot be accessed directly from outside the class."
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvArithmeticContent4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="\nQuestion 4:\n
+Which of the following is the correct syntax for a static method in Java?\n
+\n
+Options:\n
+A) void static methodName() { }\n
+B) methodName() { }\n
+C) static void methodName() { }\n
+D) method static void methodName() { }\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+C) static void methodName() { }\n
+\n
+Explanation:\n
+The correct syntax for a static method in Java is to use the static keyword before the return type of the method. Option C demonstrates the correct syntax."
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tvArithmeticContent5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="\nQuestion 5:\n
+What is the output of the following code snippet?\n
+\n
+public class Main {\n
+    public static void main(String[] args) {\n
+        String str = 'Hello, World!';\n
+        System.out.println(str);\n
+        }\n
+        }\n
+        Options:\n
+        A) Hello\n
+        B) World!\n
+        C) Hello, World!\n
+        D) Garbage value\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+C) Hello, World!\n
+\n
+Explanation:\n
+The System.out.println statement outputs the string str. Therefore, it will output the entire string 'Hello, World!'."
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tvArithmeticContent6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="\nQuestion 6:\n
+            \Which of the following is NOT a valid way to declare and initialize a string variable in Java?\n
+A) String str = 'Hello';\n
+B) String str = new String('Hello'');\n
+C) String str = 'Hello';\n
+D) String str = null;\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+C) String str = 'Hello';\n
+\n
+Explanation:\n
+Option C is not a valid way to declare and initialize a string variable in Java. In Java, strings are enclosed in double quotation marks (' '). Option A and B demonstrate valid ways to declare and initialize a string using double quotation marks. Option D initializes the string variable with a null value."
+        android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tvArithmeticContent7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Question 7:\n
+What is the result of the expression 5 / 2 in Java?\n
+\n
+Options:\n
+A) 2\n
+B) 2.5\n
+C) 2.0\n
+D) 2.5f\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+A) 2\n
+\n
+Explanation:\n
+In Java, the division operator (/) when used with two integers performs integer division, resulting in an integer quotient. Therefore, 5 / 2 will result in 2 and not 2.5."
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+
+        <TextView
+            android:id="@+id/tvArithmeticContent8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="\nQuestion 8:\n
+What is the purpose of the final keyword in Java?\n
+\n
+Options:\n
+A) It indicates that a class cannot be inherited from.\n
+B) It indicates that a variable cannot be reassigned.\n
+C) It indicates that a method can be overridden in a derived class.\n
+D) It indicates that a variable cannot be declared without initialization.\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+B) It indicates that a variable cannot be reassigned.\n
+\n
+Explanation:\n
+The final keyword in Java is used to declare a variable, method, or class that cannot be changed or overridden. When applied to a variable, it indicates that its value cannot be modified once assigned.\n"
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tvArithmeticContent9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="\nQuestion 9:\n
+What is the output of the following code snippet?\n
+\n
+public class Main {\n
+    public static void main(String[] args) {\n
+        int x = 10;\n
+        int y = 5;\n
+        int z = x % y;\n
+        System.out.println(z);\n
+    }\n
+}\n
+\n
+Options:\n
+A) 2\n
+B) 5\n
+C) 0\n
+D) 1\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+C) 0\n
+\n
+Explanation:\n
+The % operator in Java performs the modulus operation, which gives the remainder of the division. In this case, x % y will result in 0 since 10 is perfectly divisible by 5. Therefore, the output will be 0."
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+
+        <TextView
+            android:id="@+id/tvArithmeticContent10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="\nQuestion 10:\n
+What is the purpose of the this keyword in Java?\n
+\n
+Options:\n
+A) It refers to the current instance of the class.\n
+B) It refers to the superclass of the current class.\n
+C) It refers to the calling object of a method.\n
+D) It refers to the subclass of the current class.\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+A) It refers to the current instance of the class.\n
+\n
+Explanation:\n
+The this keyword in Java is used to refer to the current instance of the class. It is typically used to distinguish between instance variables and method parameters with the same name or to invoke one constructor from another within the same class."
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="\nVisit For More Question And Answer"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Link1"
+            android:textColor="@color/black"
+            android:textColorLink="@color/black"
+            android:textSize="16dp"
+            android:clickable="true"
+            android:autoLink="all"
+            android:text="https://www.indiabix.com/aptitude/questions-and-answers/"/>
+
+
+        <!-- Add more views as needed -->
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

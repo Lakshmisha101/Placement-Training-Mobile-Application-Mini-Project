@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nestedScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogicalReasonings"
+    android:background="@drawable/img3"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Verbal Reasoning"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="24dp"
+            android:textStyle="bold"/>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_alignParentStart="true"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="@color/black"/>
+
+        <!-- Your other views here -->
+
+        <TextView
+            android:id="@+id/tvArithmeticContent1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Question 1:\n
+        Choose the word that best completes the sentence:\n
+        She is an excellent pianist; her performances are always ___________.\n
+        Options:\n
+        A) Energetic\n
+        B) Melancholic\n
+        C) Impressive\n
+        D) Dull\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+C) Impressive\n
+\n
+Explanation:\n
+The sentence suggests that the pianist is excellent, which indicates a high level of skill and talent. To complete the sentence, we need a word that conveys a positive impression. Among the options, 'impressive' is the most suitable choice to describe the quality of her performances. Therefore, the correct answer is C) Impressive."  android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+
+        <TextView
+            android:id="@+id/tvArithmeticContent2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Question 2:\n
+        Read the following statement and answer the question that follows:\n
+        \n
+        'All birds have wings. Penguins are birds. Therefore, penguins have wings.'
+        Options:\n
+        A) True\n
+        B) False\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+A) True\n
+\n
+Explanation:\n
+The given statement mentions that 'All birds have wings.' It also states that 'Penguins are birds.' Therefore, based on these statements, we can conclude that penguins have wings. So, the correct answer is A) True.\n"
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tvArithmeticContent3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="\nQuestion 3:\n
+Choose the option that correctly rearranges the jumbled word to form a meaningful word:\n
+TRACLE\n
+Options:\n
+A) CLEAR\n
+B) TRACE\n
+C) REACT\n
+D) CRATE\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+B) TRACE\n
+\n
+Explanation:\n
+Rearranging the letters of 'TRACLE'' gives us the word 'TRACE,' which is a valid and meaningful word. Therefore, the correct answer is B) TRACE.\n"
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvArithmeticContent4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Question 4:\n
+Choose the word that is most similar in meaning to the given word:\n
+Agile\n
+\n
+Options:\n
+A) Clumsy\n
+B) Nimble\n
+C) Awkward\n
+D) Inept\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+B) Nimble\n
+\n
+Explanation:\n
+Agile means having the ability to move quickly and easily. A word with a similar meaning is nimble, which also refers to being quick and light in movement. Therefore, the correct answer is B) Nimble.\n"
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tvArithmeticContent5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Question 5:\n
+Choose the option that best expresses the meaning of the given idiom:\n
+'To kick the bucket'\n
+\n
+Options:\n
+A) To finish a task\n
+B) To die\n
+C) To jump with joy\n
+D) To start a new endeavor\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+B) To die\n
+\n
+Explanation:\n
+The idiom 'to kick the bucket' is a figurative expression used to mean 'to die.' Therefore, the correct answer is B) To die.\n"
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tvArithmeticContent6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Question 6:\n
+Choose the word that is an antonym of the given word:\n
+Brave\n
+\n
+Options:\n
+A) Timid\n
+B) Cowardly\n
+C) Fearful\n
+D) Daring\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+A) Timid\n
+\n
+Explanation:\n
+An antonym of 'brave' is a word that means lacking courage or being fearful. Among the given options, timid' fits this definition. Therefore, the correct answer is A) Timid.\n"
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tvArithmeticContent7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Question 7:\n
+Choose the option that correctly completes the analogy:\n
+Cup : Coffee :: Bowl : ___________\n
+\n
+Options:\n
+A) Soup\n
+B) Spoon\n
+C) Plate\n
+D) Cereal\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+A) Soup\n
+\n
+Explanation:\n
+The analogy states a relationship between a cup and coffee. Similarly, a bowl is often associated with soup. Therefore, the correct answer is A) Soup.\n"
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+
+        <TextView
+            android:id="@+id/tvArithmeticContent8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Question 8:\n
+Choose the option that best completes the sentence:\n
+The loud thunder made her ___________.\n
+\n
+Options:\n
+A) Tremble\n
+B) Smile\n
+C) Laugh\n
+D) Relax\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+A) Tremble\n
+\n
+Explanation:\n
+The phrase 'loud thunder' indicates a loud and sudden noise, which often causes fear or anxiety in people. Among the given options, 'tremble' is the most appropriate choice to express the reaction to the loud thunder. Therefore, the correct answer is A) Tremble.\n"
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tvArithmeticContent9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Question 9:\n
+Choose the option that correctly orders the words to form a logical sentence\n:
+I, dinner, had, delicious, a, last, night.\n
+\n
+Options:\n
+A) I had a delicious dinner last night.\n
+B) Last night, I had a delicious dinner.\n
+C) A delicious dinner I had last night.\n
+D) Delicious dinner had I last night.\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+B) Last night, I had a delicious dinner.\n
+\n
+Explanation:\n
+The most logical and grammatically correct sentence is 'Last night', 'I had a delicious dinner.' The other options have incorrect word order or do not convey the same meaning. Therefore, the correct answer is B) Last night, I had a delicious dinner.\n"
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+
+        <TextView
+            android:id="@+id/tvArithmeticContent10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Question 10:\n
+Choose the word that best fits the given sentence:\n
+The new employee showed great ___________ in adapting to the company's culture.\n
+\n
+Options:\n
+A) Resilience\n
+B) Punctuality\n
+C) Initiative\n
+D) Competence\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/ArithmeticbtnToggle10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvArithmeticHiddenContent10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+C) Initiative\n
+\n
+Explanation:\n
+The sentence suggests that the new employee demonstrated a positive quality related to adapting to the company's culture. Among the options, 'initiative' is the most suitable word, as it implies the willingness to take the lead and be proactive. Therefore, the correct answer is C) Initiative.\n"   android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\nVisit For More Question And Answer"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Link1"
+            android:clickable="true"
+            android:textColor="@color/black"
+            android:autoLink="all"
+            android:textSize="16dp"
+            android:textColorLink="@color/black"
+            android:text="https://www.indiabix.com/aptitude/questions-and-answers/"/>
+
+
+        <!-- Add more views as needed -->
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

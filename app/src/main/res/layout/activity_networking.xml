@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nestedScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Networking"
+    android:background="@drawable/img3"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Networking"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="24dp"
+            android:textStyle="bold"/>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_alignParentStart="true"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="@color/black"/>
+
+        <!-- Your other views here -->
+
+        <TextView
+            android:id="@+id/tvNetworkingContent1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Question 1:\n
+Which protocol is used for resolving IP addresses to MAC addresses?\n
+\n
+Options:\n
+A) DNS\n
+B) ARP\n
+C) DHCP\n
+D) ICMP\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/NetworkingbtnToggle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvNetworkingHiddenContent1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+B) ARP\n
+\n
+Explanation:\n
+ARP (Address Resolution Protocol) is used for resolving IP addresses to MAC addresses in a local network. It maps an IP address to the corresponding MAC address, allowing devices to communicate at the data link layer."
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+
+        <TextView
+            android:id="@+id/tvNetworkingContent2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="\nQuestion 2:\n
+Which layer of the OSI model is responsible for logical addressing and routing?\n
+\n
+Options:\n
+A) Network layer\n
+B) Transport layer\n
+C) Data link layer\n
+D) Physical layer\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/NetworkingbtnToggle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvNetworkingHiddenContent2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+A) Network layer\n
+\n
+Explanation:\n
+The network layer, the third layer in the OSI model, is responsible for logical addressing and routing. It handles the addressing of packets, determines the best path for data transmission, and performs routing between different networks."
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tvNetworkingContent3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="\nQuestion 3:\n
+Which network device operates at the Data Link layer of the OSI model?\n
+\n
+Options:\n
+A) Switch\n
+B) Router\n
+C) Hub\n
+D) Firewall\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/NetworkingbtnToggle3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvNetworkingHiddenContent3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+A) Switch\n
+\n
+Explanation:\n
+A switch is a network device that operates at the Data Link layer (Layer 2) of the OSI model. It uses MAC addresses to forward data between devices within a local network, improving network performance and efficiency."
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvNetworkingContent4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="\nQuestion 4:\n
+Which protocol is used for secure communication over the internet?\n
+\n
+Options:\n
+A) HTTP\n
+B) HTTPS\n
+C) FTP\n
+D) SNMP\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/NetworkingbtnToggle4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvNetworkingHiddenContent4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+B) HTTPS\n
+\n
+Explanation:\n
+HTTPS (Hypertext Transfer Protocol Secure) is used for secure communication over the internet. It combines HTTP with SSL/TLS encryption to ensure the confidentiality and integrity of data transmitted between clients and servers."
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tvNetworkingContent5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="\nQuestion 5:\n
+Which IP address range is reserved for loopback addresses?\n
+\n
+Options:\n
+A) 10.0.0.0 to 10.255.255.255\n
+B) 127.0.0.0 to 127.255.255.255\n
+C) 169.254.0.0 to 169.254.255.255\n
+D) 192.168.0.0 to 192.168.255.255\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/NetworkingbtnToggle5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvNetworkingHiddenContent5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+B) 127.0.0.0 to 127.255.255.255\n
+\n
+Explanation:\n
+The IP address range 127.0.0.0 to 127.255.255.255 is reserved for loopback addresses. It is used to test network interfaces and to communicate with the local host."
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tvNetworkingContent6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="\nQuestion 6:
+Which protocol is used to dynamically assign IP addresses to network devices?\n
+\n
+Options:\n
+A) DNS\n
+B) DHCP\n
+C) SNMP\n
+D) FTP\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/NetworkingbtnToggle6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvNetworkingHiddenContent6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+B) DHCP\n
+\n
+Explanation:\n
+DHCP (Dynamic Host Configuration Protocol) is used to dynamically assign IP addresses to network devices. It enables automatic IP configuration, including IP address, subnet mask, default gateway, and DNS server addresses."
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tvNetworkingContent7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="\nQuestion 7:\n
+Which device is used to connect multiple networks together?\n
+\n
+Options:\n
+A) Hub\n
+B) Switch\n
+C) Router\n
+D) Bridge\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/NetworkingbtnToggle7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvNetworkingHiddenContent7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+C) Router\n
+\n
+Explanation:\n
+A router is used to connect multiple networks together. It determines the best path for data packets to reach their destination across different networks based on IP addresses."
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+
+        <TextView
+            android:id="@+id/tvNetworkingContent8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="\nQuestion 8:\n
+Which protocol is used for transferring files between a client and a server?\n
+\n
+Options:\n
+A) HTTP\n
+B) FTP\n
+C) SMTP\n
+D) POP3\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/NetworkingbtnToggle8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvNetworkingHiddenContent8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+B) FTP\n
+\n
+Explanation:\n
+FTP (File Transfer Protocol) is used for transferring files between a client and a server. It provides a standard set of commands for uploading, downloading, and managing files on a remote server."
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tvNetworkingContent9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="\nQuestion 9:\n
+Which protocol is used for converting domain names to IP addresses?\n
+\n
+Options:\n
+A) DHCP\n
+B) DNS\n
+C) TCP\n
+D) ICMP\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/NetworkingbtnToggle9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvNetworkingHiddenContent9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+B) DNS\n
+\n
+Explanation:\n
+DNS (Domain Name System) is used for converting domain names to IP addresses. It translates human-readable domain names, such as www.example.com, to their corresponding IP addresses."
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+
+
+
+        <TextView
+            android:id="@+id/tvNetworkingContent10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="\nQuestion 10:\n
+Which transport protocol provides reliable, connection-oriented communication?\n
+\n
+Options:\n
+A) TCP\n
+B) UDP\n
+C) HTTP\n
+D) ICMP\n"
+            android:lineSpacingExtra="9dp"/>
+
+        <Button
+            android:id="@+id/NetworkingbtnToggle10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Solution" />
+
+        <TextView
+            android:id="@+id/tvNetworkingHiddenContent10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:text="Solution:\n
+A) TCP\n
+\n
+Explanation:\n
+TCP (Transmission Control Protocol) provides reliable, connection-oriented communication. It ensures the reliable delivery of data by establishing a connection, performing error checking, and retransmitting lost packets if necessary."
+            android:lineSpacingExtra="9dp"
+            android:visibility="gone" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="\nVisit For More Question And Answer"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Link1"
+            android:clickable="true"
+            android:textColor="@color/black"
+            android:textColorLink="@color/black"
+            android:textSize="16dp"
+            android:autoLink="all"
+            android:text="https://www.indiabix.com/aptitude/questions-and-answers/"/>
+
+
+        <!-- Add more views as needed -->
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
